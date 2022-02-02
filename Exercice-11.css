@@ -7,18 +7,18 @@ a #logo{display: flex;}
 /*pub*/
 #pub{border :1px solid black; display: flex; flex : 1 1 0}
 a #pub{display: flex}
-img a #pub{flex : 0 0 480px}
+img a #pub{display: flex; flex : 0 0 480px; margin-left: auto; margin-right: auto;}
 
 
-main{border :1px solid black; display: flex;}
-#menu{border :1px solid black}
+main{border :1px solid black; display: flex; flex-direction: row;}
+#menu{border :1px solid black; display: flex; flex: 0 0 10em}
 #titre{border :1px solid black}
 #recherche{border :1px solid black}
 #contenu{border :1px solid black}
 #encart1{border :1px solid black}
 #encart2{border :1px solid black}
 
-footer{border :1px solid black; display: flex; margin-left: auto; margin-right: auto;}
+footer{border :1px solid black; display: flex; margin-left: auto; margin-right: auto; text-align: center;}
 
 
 

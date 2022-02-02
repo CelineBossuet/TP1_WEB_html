@@ -1,7 +1,21 @@
+stages:
+    - test
+    - pages
+
+test:
+    stage: test
+    image: python:3.6.6
+    script:
+        - pip install html-linter
+        - ~/.local/bin/html-linter *.html
+
+
+
 # Voici l'adresse de la page du TP
 # https://webmobile.pages.ensimag.fr/isi2a/tp1htmlcss/g2/TP1_HTML_CSS_bossuetc_dorchenc
 
 pages: 
+    stage: pages
     image: debian:bullseye  # 
     script:
         - mkdir -p public   # crée un nouveau dossier public si il n'existe pas déjà

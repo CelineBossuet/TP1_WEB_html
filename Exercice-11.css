@@ -67,14 +67,14 @@ main{
 #encart1{
     border :1px solid black; 
     background-color: yellowgreen; 
-    flex: 0 0 10em; 
     float: right;
+    width: 10em;
 }
 #encart2{
     border :1px solid black; 
     background-color: yellowgreen; 
-    flex: 0 0 10em; 
     float: right;
+    width: 10em;
 }
 
 footer{

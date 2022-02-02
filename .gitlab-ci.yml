@@ -1,0 +1,8 @@
+pages: 
+    image: debian:bullseye
+    script:
+        - mkdir -p public
+        - cp *.html public/
+    artifacts:
+        paths:
+            - public 

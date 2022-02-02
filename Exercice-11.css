@@ -81,6 +81,7 @@ main{
     width: 10em;
     box-shadow: -5px 5px black;
     margin-top: 4ex;
+    clear : both;
 }
 #encart2{
     border :1px solid black; 
@@ -90,6 +91,7 @@ main{
     width: 10em;
     box-shadow: -5px 5px black;
     margin-top: 4ex;
+    clear : both;
 }
 
 footer{

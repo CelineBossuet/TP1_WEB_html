@@ -1,8 +1,11 @@
+# Voici l'adresse de la page du TP
+# https://webmobile.pages.ensimag.fr/isi2a/tp1htmlcss/g2/TP1_HTML_CSS_bossuetc_dorchenc
+
 pages: 
-    image: debian:bullseye
+    image: debian:bullseye  # 
     script:
-        - mkdir -p public
-        - cp *.html public/
+        - mkdir -p public   # crée un nouveau dossier public si il n'existe pas déjà
+        - cp *.html public/ # copie tous les fichiers .html dans le dossier public
     artifacts:
         paths:
-            - public 
+            - public        # ajoute le chemin

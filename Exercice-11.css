@@ -1,24 +1,90 @@
-body{border :1px solid black; display: flex; flex-direction: column}
+body{
+    border :1px solid black; 
+    display: flex; 
+    flex-direction: column
+}
 
-header{border :1px solid black; flex:120px; display: flex; flex-direction: row;background-color: beige;}
+header{
+    border :1px solid black; 
+    flex:120px; display: flex; 
+    flex-direction: row;
+    background-color: beige;
+}
 /*logo*/
-#logo{background-color: red; border :1px solid black; display: flex; flex: 0 0 120px}
-a #logo{display: flex;}
+#logo{
+    background-color: red; 
+    border :1px solid black; 
+    display: flex; 
+    flex: 0 0 120px
+}
+a #logo{
+    display: flex;
+}
 /*pub*/
-#pub{border :1px solid black; display: flex; flex : 1 1 0; background-color: red;}
-a #pub{display: flex}
-img a #pub{display: flex; flex : 0 0 480px; margin-left: auto; margin-right: auto;}
+#pub{
+    border :1px solid black; 
+    display: flex; 
+    flex : 1 1 0; 
+    background-color: red;
+}
+a #pub{
+    display: flex
+}
+img a #pub{
+    display: flex; 
+    flex : 0 0 480px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
 
 
-main{border :1px solid black; display: flex; flex-direction: row; position: relative; background-color: beige;}
-#menu{border :1px solid black; display: flex; flex: 0 0 10em; background-color: yellowgreen;}
-#titre{border :1px solid black; background-color: yellowgreen;}
-#recherche{border :1px solid black; position: absolute; top: 0; right: 0;}
-#contenu{border :1px solid black}
-#encart1{border :1px solid black; background-color: yellowgreen;}
-#encart2{border :1px solid black; background-color: yellowgreen;}
+main{
+    border :1px solid black; 
+    display: flex; 
+    flex-direction: row; 
+    position: relative; 
+    background-color: beige;
+}
+#menu{
+    border :1px solid black; 
+    display: flex; 
+    flex: 0 0 10em; 
+    background-color: yellowgreen;
+}
+#titre{
+    border :1px solid black; 
+    background-color: yellowgreen;
+}
+#recherche{
+    border :1px solid black; 
+    position: absolute; 
+    top: 0; 
+    right: 0;
+}
+#contenu{
+    border :1px solid black
+}
+#encart1{
+    border :1px solid black; 
+    background-color: yellowgreen; 
+    flex: 0 0 10em; 
+    float: right;
+}
+#encart2{
+    border :1px solid black; 
+    background-color: yellowgreen; 
+    flex: 0 0 10em; 
+    float: right;
+}
 
-footer{border :1px solid black; display: flex; margin-left: auto; margin-right: auto; text-align: center;}
+footer{
+    border :1px solid black; 
+    display: flex; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    background-color: red;
+}
 
 
 

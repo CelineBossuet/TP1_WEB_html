@@ -1,11 +1,13 @@
 body{
     border :1px solid black; 
+    border-radius: 10px;
     display: flex; 
     flex-direction: column
 }
 
 header{
-    border :1px solid black; 
+    border :1px solid black;
+    border-radius: 10px; 
     flex:120px; 
     display: flex; 
     flex-direction: row;
@@ -15,6 +17,7 @@ header{
 #logo{
     background-color: red; 
     border :1px solid black; 
+    border-radius: 10px;
     display: flex; 
     flex: 0 0 120px;
     margin-right: 20px;
@@ -24,7 +27,8 @@ a #logo{
 }
 /*pub*/
 #pub{
-    border :1px solid black; 
+    border :1px solid black;
+    border-radius: 10px; 
     display: flex; 
     flex : 1 1 0; 
     background-color: red;
@@ -42,6 +46,7 @@ img a #pub{
 
 main{
     border :1px solid black; 
+    border-radius: 10px;
     display: flex; 
     flex-direction: row; 
     position: relative; 
@@ -49,12 +54,14 @@ main{
 }
 #menu{
     border :1px solid black; 
+    border-radius: 10px;
     display: flex; 
     flex: 0 0 10em; 
     background-color: yellowgreen;
 }
 #titre{
     border :1px solid black; 
+    border-radius: 10px;
     background-color: yellowgreen;
 }
 #recherche{
@@ -63,10 +70,12 @@ main{
     right: 0;
 }
 #contenu{
-    border :1px solid black
+    border :1px solid black;
+    border-radius: 10px;
 }
 #encart1{
     border :1px solid black; 
+    border-radius: 10px;
     background-color: yellowgreen; 
     float: right;
     width: 10em;
@@ -75,6 +84,7 @@ main{
 }
 #encart2{
     border :1px solid black; 
+    border-radius: 10px;
     background-color: yellowgreen; 
     float: right;
     width: 10em;
@@ -84,6 +94,7 @@ main{
 
 footer{
     border :1px solid black; 
+    border-radius: 10px;
     display: flex; 
     margin-left: auto; 
     margin-right: auto; 

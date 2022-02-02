@@ -1,16 +1,24 @@
-header{border :1px solid black; display: flex; align-items: center}
-#logo{border :1px solid black; flex: auto}
-#pub{border :1px solid black; flex: auto}
+body{border :1px solid black; display: flex; flex-direction: column}
+
+header{border :1px solid black; flex:120px; display: flex; flex-direction: row;}
+/*logo*/
+#logo{border :1px solid black; display: flex; flex: 0 0 120px}
+a #logo{display: flex;}
+/*pub*/
+#pub{border :1px solid black; display: flex; flex : 1 1 0}
+a #pub{display: flex}
+img a #pub{flex : 0 0 480px}
 
 
 main{border :1px solid black; display: flex;}
-#menu{border :1px solid black; flex: 1 1 200px}
+#menu{border :1px solid black}
 #titre{border :1px solid black}
 #recherche{border :1px solid black}
-#contenu{border :1px solid black; flex: 5 5 0}
+#contenu{border :1px solid black}
 #encart1{border :1px solid black}
 #encart2{border :1px solid black}
 
+footer{border :1px solid black; display: flex; margin-left: auto; margin-right: auto;}
 
 
 

@@ -1,8 +1,18 @@
-#logo{border :1px solid black}
-#pub{border :1px solid black}
-#menu{border :1px solid black}
+header{border :1px solid black; display: flex; align-items: center}
+#logo{border :1px solid black; flex: auto}
+#pub{border :1px solid black; flex: auto}
+
+
+main{border :1px solid black; display: flex;}
+#menu{border :1px solid black; flex: 1 1 200px}
 #titre{border :1px solid black}
 #recherche{border :1px solid black}
+#contenu{border :1px solid black; flex: 5 5 0}
+#encart1{border :1px solid black}
+#encart2{border :1px solid black}
+
+
+
 
 
 

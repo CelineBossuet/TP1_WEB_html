@@ -1,13 +1,13 @@
 stages:
-    - test
-    - pages
+        - test
+        - pages
 
 test:
-    stage: test
-    image: python:3.6.6
-    script:
-        - pip install html-linter
-        - ~/.local/bin/html-linter *.html
+        stage: test
+        image: python:3.6.6
+        script:
+                - pip install html-linter
+                - ~/.local/bin/html_lint.py *.html
 
 
 
@@ -15,11 +15,11 @@ test:
 # https://webmobile.pages.ensimag.fr/isi2a/tp1htmlcss/g2/TP1_HTML_CSS_bossuetc_dorchenc
 
 pages: 
-    stage: pages
-    image: debian:bullseye  # 
-    script:
-        - mkdir -p public   # crée un nouveau dossier public si il n'existe pas déjà
-        - cp *.html public/ # copie tous les fichiers .html dans le dossier public
-    artifacts:
-        paths:
-            - public        # ajoute le chemin
+        stage: pages
+        image: debian:bullseye    # 
+        script:
+                - mkdir -p public     # crée un nouveau dossier public si il n'existe pas déjà
+                - cp *.html public/ # copie tous les fichiers .html dans le dossier public
+        artifacts:
+                paths:
+                        - public                # ajoute le chemin

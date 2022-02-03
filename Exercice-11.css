@@ -2,7 +2,7 @@ body{
     border :1px solid black; 
     border-radius: 10px;
     display: flex; 
-    flex-direction: column
+    flex-direction: column;
 }
 
 header{
@@ -11,6 +11,7 @@ header{
     flex:120px; 
     display: flex; 
     flex-direction: row;
+    justify-content: space-between;
     background-color: beige;
 }
 /*logo*/
@@ -22,26 +23,36 @@ header{
     flex: 0 0 120px;
     margin-right: 20px;
 }
+/*
 a #logo{
     display: flex;
-}
+}*/
 /*pub*/
 #pub{
     border :1px solid black;
     border-radius: 10px; 
     display: flex; 
+    justify-content: center;
     flex : 1 1 0; 
     background-color: red;
 }
-a #pub{
-    display: flex
+
+img{
+    border-radius: 10px;
+}
+/*a #pub{
+    display: flex;
+    border-radius: 10px;
+    align-self: center;
 }
 img a #pub{
     display: flex; 
     flex : 0 0 480px; 
+    border-radius: 10px;
     align-self: center;
+    vertical-align: center;
 
-}
+}*/
 
 
 main{
@@ -69,9 +80,17 @@ main{
     top: 0; 
     right: 0;
 }
-#contenu{
+.contenu{
     border :1px solid black;
     border-radius: 10px;
+    background-color: beige;
+    counter-reset: section;
+}
+
+aside::before{
+    counter-increment: section;
+    content: counter(section) ".";
+    font: bold 2em "Open Sans";
 }
 #encart1{
     border :1px solid black; 
@@ -92,6 +111,9 @@ main{
     box-shadow: -5px 5px black;
     margin-top: 4ex;
     clear : both;
+}
+p::first-letter{
+        font: bold 2em "Open Sans";
 }
 
 footer{

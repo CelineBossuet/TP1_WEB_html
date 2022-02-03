@@ -27,9 +27,9 @@ pages:
         paths:
             - public        # ajoute le chemin
 
-lintcss:
+#lintcss:
     #job vérifiant la qualité du code css
-artifacts:
+#artifacts:
     #job qui lit le rapport de lintcss
 badge:
     image: python:3.6.6

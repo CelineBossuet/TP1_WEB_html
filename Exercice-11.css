@@ -1,107 +1,107 @@
 body{
-        border :1px solid black; 
-        border-radius: 10px;
-        display: flex; 
-        flex-direction: column
+    border :1px solid black; 
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column
 }
 
 header{
-        border :1px solid black;
-        border-radius: 10px; 
-        flex:120px; 
-        display: flex; 
-        flex-direction: row;
-        background-color: beige;
+    border :1px solid black;
+    border-radius: 10px; 
+    flex:120px; 
+    display: flex; 
+    flex-direction: row;
+    background-color: beige;
 }
 /*logo*/
 #logo{
-        background-color: red; 
-        border :1px solid black; 
-        border-radius: 10px;
-        display: flex; 
-        flex: 0 0 120px;
-        margin-right: 20px;
+    background-color: red; 
+    border :1px solid black; 
+    border-radius: 10px;
+    display: flex; 
+    flex: 0 0 120px;
+    margin-right: 20px;
 }
 a #logo{
-        display: flex;
+    display: flex;
 }
 /*pub*/
 #pub{
-        border :1px solid black;
-        border-radius: 10px; 
-        display: flex; 
-        flex : 1 1 0; 
-        background-color: red;
+    border :1px solid black;
+    border-radius: 10px; 
+    display: flex; 
+    flex : 1 1 0; 
+    background-color: red;
 }
 a #pub{
-        display: flex
+    display: flex
 }
 img a #pub{
-        display: flex; 
-        flex : 0 0 480px; 
-        align-self: center;
+    display: flex; 
+    flex : 0 0 480px; 
+    align-self: center;
 
 }
 
 
 main{
-        border :1px solid black; 
-        border-radius: 10px;
-        display: flex; 
-        flex-direction: row; 
-        position: relative; 
-        background-color: beige;
+    border :1px solid black; 
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: row; 
+    position: relative; 
+    background-color: beige;
 }
 #menu{
-        border :1px solid black; 
-        border-radius: 10px;
-        display: flex; 
-        flex: 0 0 10em; 
-        background-color: yellowgreen;
+    border :1px solid black; 
+    border-radius: 10px;
+    display: flex; 
+    flex: 0 0 10em; 
+    background-color: yellowgreen;
 }
 #titre{
-        border :1px solid black; 
-        border-radius: 10px;
-        background-color: yellowgreen;
+    border :1px solid black; 
+    border-radius: 10px;
+    background-color: yellowgreen;
 }
 #recherche{
-        position: absolute; 
-        top: 0; 
-        right: 0;
+    position: absolute; 
+    top: 0; 
+    right: 0;
 }
 #contenu{
-        border :1px solid black;
-        border-radius: 10px;
+    border :1px solid black;
+    border-radius: 10px;
 }
 #encart1{
-        border :1px solid black; 
-        border-radius: 10px;
-        background-color: yellowgreen; 
-        float: right;
-        width: 10em;
-        box-shadow: -5px 5px black;
-        margin-top: 4ex;
-        clear : both;
+    border :1px solid black; 
+    border-radius: 10px;
+    background-color: yellowgreen; 
+    float: right;
+    width: 10em;
+    box-shadow: -5px 5px black;
+    margin-top: 4ex;
+    clear : both;
 }
 #encart2{
-        border :1px solid black; 
-        border-radius: 10px;
-        background-color: yellowgreen; 
-        float: right;
-        width: 10em;
-        box-shadow: -5px 5px black;
-        margin-top: 4ex;
-        clear : both;
+    border :1px solid black; 
+    border-radius: 10px;
+    background-color: yellowgreen; 
+    float: right;
+    width: 10em;
+    box-shadow: -5px 5px black;
+    margin-top: 4ex;
+    clear : both;
 }
 
 footer{
-        border :1px solid black; 
-        border-radius: 10px;
-        display: flex; 
-        margin-left: auto; 
-        margin-right: auto; 
-        text-align: center; 
-        background-color: red;
+    border :1px solid black; 
+    border-radius: 10px;
+    display: flex; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    background-color: red;
 }
 
 

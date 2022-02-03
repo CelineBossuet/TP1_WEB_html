@@ -16,7 +16,7 @@ test:
 
 # Voici l'adresse de la page du TP
 # https://webmobile.pages.ensimag.fr/isi2a/tp1htmlcss/g2/TP1_HTML_CSS_bossuetc_dorchenc
-
+#Pour acceder aux différents exercices il suffit de mettre dans l'url le nom du fichier
 pages: 
     stage: pages
     image: debian:bullseye  
@@ -32,7 +32,8 @@ pages:
 #artifacts:
     #job qui lit le rapport de lintcss
 badge:
+    #job permetant la génération d'un badge
     image: python:3.6.6
     script:
         - pip install anybadge 
-    #job permetant la génération d'un badge
+    

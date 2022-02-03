@@ -23,10 +23,7 @@ header{
     flex: 0 0 120px;
     margin-right: 20px;
 }
-/*
-a #logo{
-    display: flex;
-}*/
+
 /*pub*/
 #pub{
     border :1px solid black;
@@ -40,19 +37,7 @@ a #logo{
 img{
     border-radius: 10px;
 }
-/*a #pub{
-    display: flex;
-    border-radius: 10px;
-    align-self: center;
-}
-img a #pub{
-    display: flex; 
-    flex : 0 0 480px; 
-    border-radius: 10px;
-    align-self: center;
-    vertical-align: center;
 
-}*/
 
 
 main{
@@ -67,7 +52,6 @@ main{
     border :1px solid black; 
     border-radius: 10px;
     display: flex; 
-    flex: 0 0 10em; 
     background-color: yellowgreen;
 }
 #titre{
@@ -126,6 +110,72 @@ footer{
     background-color: red;
 }
 
+/*Partie permetant l'affichage sous téléphone*/
+
+@media screen and (max-width : 800px){
+        /*Dans chaque objet on modifie ce qu'il faut pour afficher correctement le site*/
+        
+    body{
+        display: flex;
+        flex-direction: column;
+		border-radius: 0% ;
+    }
+
+    header{
+        display: none; /*le header disparait donc*/
+    }
+
+    footer{
+        display: none;
+    }
+
+	main{
+		display: flex;
+		flex-direction: column;
+		border-radius: 0%;
+	}
+
+	#recherche{
+		display: none;
+	}
+
+	.encart{
+		display: none;
+	}
+
+	#titre{
+		border-radius: 0%;
+	}
+
+	#menu > ul{
+		display: none;
+	}
+
+	#menu::before{
+		content: "="; /*Partie gérant le menu avant de passer la sourie dessus*/
+		font-size: large;
+		font-weight: bold;
+	}
+
+	#menu{
+		height: auto;
+		border-radius: 0%;
+		background-color: blue;
+	}
+
+	#menu:hover{
+		background-color: grey;
+	}
+
+	#menu:hover > ul{
+		display: inline;
+	}
+
+	.contenu{
+		border-radius: 0%;
+	}
+        
+}
 
 
 

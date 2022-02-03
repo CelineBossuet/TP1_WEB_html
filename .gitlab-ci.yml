@@ -1,13 +1,16 @@
 stages:
-    - test
+    - test #permet de donner les etapes pour la pipeline
     - pages
 
 test:
-    stage: test
+    stage: test #parti de test des fichiers html
     image: python:3.6.6
     script:
-        - pip install html-linter
+        - pip install html-linter #html-linter pas forcement installé sur la machine
         - ~/.local/bin/html_lint.py --disable=optional_tag,indentation *.html
+        #disable permet de ne pas afficher les tag optionels et des problèmes d'indentations
+
+
 
 
 
@@ -16,10 +19,20 @@ test:
 
 pages: 
     stage: pages
-    image: debian:bullseye  # 
+    image: debian:bullseye  
     script:
         - mkdir -p public   # crée un nouveau dossier public si il n'existe pas déjà
         - cp *.html public/ # copie tous les fichiers .html dans le dossier public
     artifacts:
         paths:
             - public        # ajoute le chemin
+
+lintcss:
+    #job vérifiant la qualité du code css
+artifacts:
+    #job qui lit le rapport de lintcss
+badge:
+    image: python:3.6.6
+    script:
+        - pip install anybadge 
+    #job permetant la génération d'un badge

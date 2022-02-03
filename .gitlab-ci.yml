@@ -7,7 +7,7 @@ test:
     image: python:3.6.6
     script:
         - pip install html-linter
-        - ~/.local/bin/html_lint.py *.html
+        - ~/.local/bin/html_lint.py --disable=optional_tag,indentation *.html
 
 
 
